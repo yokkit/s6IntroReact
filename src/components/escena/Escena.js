@@ -1,9 +1,11 @@
 import React from 'react';
+import data from '../data/data.json';
 
 const Escena = () =>{
+    const EscenasData = data.map(escena=><p>{escena}</p>);
     return (
         <div>
-            El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial
+            {EscenasData}
         </div>
     )
 }
