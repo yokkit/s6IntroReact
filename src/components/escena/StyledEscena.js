@@ -6,4 +6,13 @@ export const RoundText = styled.p`
   padding: 1rem;
   text-align: center;
   text-size: 1rem;
+  &:nth-of-type(${props=>props.coloredNum}){
+    background-color: pink;
+  }
 `;
+
+export const BigButton = styled.button`
+  width:50%;
+  padding: 20px;
+`;
+
