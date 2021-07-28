@@ -1,6 +1,6 @@
 import React from 'react'
-import Escena from './components/Escena/Escena';
-import data from './components/data/data.json';
+import Escena from './Components/Escena/Escena';
+import data from './Components/data/data.json';
 
 
 function App() {
