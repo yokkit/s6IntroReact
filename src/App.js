@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Escena from "./Components/Escena/Escena";
-import data from "./Components/data/data.json";
-import Welcome from "./Components/Welcome/Welcome";
+import Escena from "./components/escena/Escena";
+import Data from "./Data";
+import Welcome from "./components/welcome/Welcome";
 
 function App() {
   const [firstAccess, setFirstAccess] = useState(false);
@@ -13,7 +13,7 @@ function App() {
       {!firstAccess ? (
         <Welcome startStory={checkAccess} />
       ) : (
-        <Escena data={data} />
+        <Escena data={Data} />
       )}
     </div>
   );
